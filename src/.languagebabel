@@ -1,0 +1,13 @@
+{
+  "babelMapsPath":                    "",
+  "babelMapsAddUrl":                  false,
+  "babelSourcePath":                  "frontend-test/src",
+  "babelTranspilePath":               "frontend-test/lib",
+  "createMap":                        false,
+  "createTargetDirectories":          true,
+  "createTranspiledCode":             true,
+  "disableWhenNoBabelrcFileInPath":   true,
+  "suppressSourcePathMessages":       false,
+  "suppressTranspileOnSaveMessages":  false,
+  "transpileOnSave":                  true
+}

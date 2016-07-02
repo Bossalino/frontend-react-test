@@ -1,0 +1,198 @@
+$white-color: #fff;
+$primary-color: #0ab6ec;
+$dark-color: #403d3d;
+
+
+:focus {
+  outline: 0;
+}
+
+body {
+  background-color: $white-color;
+  min-width: 425px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header {
+
+  .logo-header {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 5px;
+    border-radius: 8px;
+
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .each-link:hover {
+      background-color: $primary-color;
+      color: $white-color;
+      transition: 0.4s;
+    }
+  }
+
+}
+
+.section-hero {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid $primary-color;
+  color: $white-color;
+
+  .jumbotron {
+    background-color: $primary-color;
+    border-radius: 0;
+    min-height: 400px;
+
+    .cta-button {
+      margin-top: 75px;
+
+    }
+
+    .github-link {
+      border: 1px solid $white-color;
+      background-color: $white-color;
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 8px;
+      color: $primary-color;
+      margin-top: 50px;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    .github-link:hover {
+      border: 1px solid $white-color;
+      background-color: $primary-color;
+      color: $white-color;
+      transition: 0.4s;
+    }
+  }
+}
+
+.section-thumbnail {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  .thumb-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .thumbnail {
+      min-width: 100px;
+      min-height: 170px;
+      text-align: center;
+
+    }
+
+    .caption {
+      margin-top: 55px;
+    }
+
+    .cta {
+      border: 1px solid $primary-color;
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 8px;
+
+    }
+
+    .cta:hover {
+      text-decoration: none;
+      background-color: $primary-color;
+      color: $white-color;
+      transition: 0.4s;
+    }
+  }
+}
+
+.section-footer {
+  margin-top: 50px;
+  background-color: $dark-color;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: $white-color;
+
+  .footer-link-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .footer-link {
+      list-style-type: none;
+    }
+
+    .subscribe-field {
+      margin-right: 10px;
+      border-radius: 20px;
+      padding: 5px;
+      border: 0;
+    }
+
+    .subscribe-field:focus {
+      border: 1px solid $primary-color;
+    }
+
+    .subscribe-button {
+      border-radius: 20px;
+      border: 1px solid $primary-color;
+      padding: 5px 10px;
+      margin-right: 10px;
+      background: none;
+    }
+
+    .subscribe-button:hover {
+      background: $primary-color;
+      color: $white-color;
+      transition: 0.4s;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .section-header {
+
+    .logo-header {
+      font-size: 1.5em;
+    }
+
+    .nav-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+  }
+
+  .section-thumbnail {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .section-footer {
+
+    .subscribe-form {
+      margin-top: 20px;
+
+    }
+  }
+}
